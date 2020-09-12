@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="C:\Users\user\Desktop\LIBRARY\jquery-ui-1.12.1\jquery-ui-1.12.1\jquery-ui.min.css">
+    <script src="C:\Users\user\Desktop\LIBRARY\jquery-ui-1.12.1\jquery-ui-1.12.1\external\jquery\jquery.js"></script>
+    <script src="C:\Users\user\Desktop\LIBRARY\jquery-ui-1.12.1\jquery-ui-1.12.1\jquery-ui.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#reset").click(function () {
+                $("#form").toggle(2000,function(){
+                   $(document).ready(function(){
+                    $("#name11").show(1000);
+                    $("#age11").show(1500);
+                    $("#id11").show(2500);
+                    $("#pin11").show(2500);
+                    $("#pin22").show(3000);
+                    $("#submit").show(3500);
+                   });
+                });
+            });
+           $("#submit").click(function(){
+               $("#err").dialog({buttons:{
+                   "OK":function(){
+                       $("#err").dialog("close");
+                   }
+               }});
+           });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="container">
+     <div id="para">
+         Lorem ipsum dolor, sit amet consec
+         tetur adipisicing elit. Expedita saepe 
+         doloribus asperiores pariatur distinctio
+          doloremque exercitationem temporibus, c
+          orrupti ducimus ipsam reiciendis molestiae quidem voluptatem re
+         pellendus corporis sapiente quia eius. Blanditiis.
+     </div>
+
+        <input type="reset" value="X" id="reset">
+
+        <hr>
+        <div id="form" style="display: none;">
+            <label id="name11">name<br><input type="text" id="name" name="name" ></label><br>
+            <label id="age11">age<br><input type="number" id="age" name="age"></label><br>
+            <label id="id11">id<br><input type="number" id="id" name="id"></label><br>
+            <label id="pin11">pin<br><input type="text" id="pin" name="pin"></label><br>
+            <label id="pin22">confirm pin<br><input type="password" id="pin2" name="pin2"></label><br><br>
+
+            
+            <button type="submit" id="submit">submit</button><br>
+
+
+            <div id="err" ></div>
+        </div>
+
+
+
+        <hr>
+        <div id="para">
+            Lorem ipsum dolor, sit amet consec
+            tetur adipisicing elit. Expedita saepe 
+            doloribus asperiores pariatur distinctio
+             doloremque exercitationem temporibus, c
+             orrupti ducimus ipsam reiciendis molestiae quidem voluptatem re
+            pellendus corporis sapiente quia eius. Blanditiis.
+        </div>
+   
+    </div>
+    <!--<div id="details">
+        <p class="det">please confirm your details here after submiting</p>
+
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+        <div id="fourth"></div>
+    </div>-->
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="C:\Users\user\Desktop\LIBRARY\jquery-ui-1.12.1\jquery-ui-1.12.1\jquery-ui.min.css">
+    <script src="C:\Users\user\Desktop\LIBRARY\jquery-ui-1.12.1\jquery-ui-1.12.1\external\jquery\jquery.js"></script>
+    <script src="C:\Users\user\Desktop\LIBRARY\jquery-ui-1.12.1\jquery-ui-1.12.1\jquery-ui.min.js"></script>
+ <script>
+     $(document).ready(function(){
+         $("#box").show(2000,function(){
+             $(document).ready(function(){
+                 document.getElementById("box").classList.add("shape");
+                 $("#text").fadeIn(3000);
+                 $("#vow").fadeToggle(4000);
+             });
+         });
+         
+     });
+ </script>
+</head>
+<body>
+    <div id="container">
+        <div id="box" style="display: none;">
+            <!--
+                i love you<br><strong>so</strong><br>much</p>
+            -->
+            <p id="text" style="display: none;">
+            <img src="log2.png" height="100px" width="100px">
+            </p>
+        </div>
+        <p id="vow" style="display: none;">
+        TILL DEATH
+        </p>
+        <audio src="Culture - Five To One Strip Me -.mp3" >
+            <track kind="captions" src="foo.en.vtt" srclang="en" label="English">
+            <track kind="captions" src="foo.sv.vtt" srclang="sv" label="Svenska">
+        </audio>
+    </div>
+    
+</body>
+</html>

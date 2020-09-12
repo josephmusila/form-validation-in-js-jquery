@@ -1,0 +1,62 @@
+#box{
+    height: 100px ;
+    width: 100px ;
+    margin: auto;
+    background-color: chartreuse;
+
+}
+body{
+    padding: 50px;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background: url("VID-20180318-WA0007.jpg") no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.shape{
+    border-radius: 50px;
+ 
+
+   animation-name: roll;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+    transition: all 2000ms ease;
+    padding: 2px;
+}
+@keyframes roll{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        
+        transform: scale(2,2);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#text{
+    text-align: center;
+}
+#container{
+    width: max-content;
+    height: auto;
+    padding: 10px;
+    animation-timing-function: linear;
+    animation-name: back;
+    animation-duration: 2000ms;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes back{
+    from{background-color: orangered;}
+    to{background-color: #00c3ff;}
+}
+#vow{
+    color: blue;
+    font-size: 20px;
+}
